@@ -1,5 +1,92 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.root {
+  padding: 1.5em;
+}
+
+.sort {
+  padding: 1.5em;
+  position: fixed;
+}
+
+.sortOrder {
+  margin-top: 30px;
+}
+
+/* OFFERS STYLES */
+.heading {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 900;
+  background-color: #215C6C;
+  color: white;
+  padding: 15px;
+}
+
+.offerNavigation {
+  padding: 20px;
+  text-align: center;
+}
+
+.loadPrev, .loadNext {
+  background: #215C6C;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  margin: 5px;
+}
+
+.loadPrev:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.offers {
+  padding: 1.5em;
+}
+
+/* OFFER STYLES */
+
+.offer {
+  border-bottom: 1px solid;
+  padding-top: 0.7em;
+  padding-bottom: 0.5em;
+}
+
+.offerPrice {
+  background: #50E48B;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 100px;
+}
+
+i.fa.fa-arrow-right {
+  color: #215C6C;
+}
+
+/* PICKUP-DROPOFF STYLES */
+
+.placeName {
+  font: inherit;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.dateTime {
+  font-size: 12px;
+}
+
+.dateTime strong {
+  text-decoration: underline;
+  font-weight: 900;
 }
