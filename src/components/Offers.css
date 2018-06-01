@@ -1,0 +1,34 @@
+.heading {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 900;
+  background-color: #215C6C;
+  color: white;
+  padding: 15px;
+}
+
+.offerNavigation {
+  padding: 20px;
+  text-align: center;
+}
+
+.loadPrev, .loadNext {
+  background: #215C6C;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  margin: 5px;
+}
+
+.loadPrev:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.offers {
+  padding: 1.5em;
+}

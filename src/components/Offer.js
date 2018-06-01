@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { PickupDropoff } from './PickupDropoff';
+import PropTypes from 'prop-types';
+
+require('./Offer.css');
 
 export class Offer extends Component {
 
@@ -39,4 +42,11 @@ export class Offer extends Component {
       </div>
     );
   }
+
+  static propTypes = {
+    origin: PropTypes.object.isRequired,
+    destination: PropTypes.object.isRequired,
+    miles: PropTypes.number.isRequired,
+    offer: PropTypes.number.isRequired,
+  };
 }

@@ -1,0 +1,14 @@
+.placeName {
+  font: inherit;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.dateTime {
+  font-size: 12px;
+}
+
+.dateTime strong {
+  text-decoration: underline;
+  font-weight: 900;
+}

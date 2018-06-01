@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
+
+require('./PickupDropoff.css');
 
 export class PickupDropoff extends Component {
   formatDateTime(dateTimeString) {
@@ -28,5 +31,12 @@ export class PickupDropoff extends Component {
       </div>
     </div>
     );
+  }
+
+  static propTypes = {
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    startDateTime: PropTypes.string.isRequired,
+    endDateTime: PropTypes.string.isRequired
   }
 }

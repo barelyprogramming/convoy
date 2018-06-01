@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { observer, PropTypes } from 'mobx-react';
+
 import { Offer } from './Offer';
-import { offersStore } from '../offers.store';
-import { observer } from 'mobx-react';
+import { offersStore } from '../stores/OffersStore';
+
+require('./Offers.css');
 
 @observer
 export class Offers extends Component {
@@ -15,9 +18,10 @@ export class Offers extends Component {
 
   render() {
     const { offers } = this.props;
-    const formattedOffers = offers.map( offer => {
+    const formattedOffers = offers.map((offer, index) => {
       return (
         <Offer
+          key={index}
           origin={offer.origin}
           destination={offer.destination}
           miles={offer.miles}
@@ -56,4 +60,8 @@ export class Offers extends Component {
       </div>
     );
   }
+
+  static propTypes = {
+    offers: PropTypes.observableArray.isRequired,
+  };
 }

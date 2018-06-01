@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { FIELD_ORDER, FIELD_SORT_ORDER } from '../constants';
 import { observer } from 'mobx-react';
-import { offersStore } from '../offers.store';
+
+import { FIELD_ORDER, FIELD_SORT_ORDER } from '../constants';
+import { offersStore } from '../stores/OffersStore';
+
+require('./Sort.css');
 
 @observer
 export class Sort extends Component {
@@ -15,7 +18,6 @@ export class Sort extends Component {
 
   render() {
     const sortOptions = FIELD_ORDER.map(field => {
-      console.log(offersStore.sortBy === field.value);
       return (
           <div className="form-check" key={field.value}>
             <input className="form-check-input"
