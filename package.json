@@ -89,14 +89,6 @@
       "mjs"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ],
-    "plugins": [
-      "transform-decorators-legacy"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   }
